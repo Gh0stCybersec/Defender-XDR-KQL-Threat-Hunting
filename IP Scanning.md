@@ -15,8 +15,7 @@ the RemotePortCount number the less likely a scan will be detected.
 
 ## Defender For Endpoint
 ```
-//Query that searches for network scanning tools , Angry IP Scanner and Softperfect Network Scanner
-//add more tools,
+//Query that searches for network scanning tools such as Angry IP Scanner and Softperfect Network Scanner
 let RemotePortCount = 100;
 DeviceNetworkEvents
 //| where Timestamp >= ago(1d)
