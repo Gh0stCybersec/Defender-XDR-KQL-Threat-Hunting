@@ -21,8 +21,9 @@ Use "let" to define reusable expressions or subqueries within the main query.
 ## Examples 
 
 ### Search for alerts and incidents:
-
+```
 SecurityAlert
 | where AlertSeverity == "High"
 | project Timestamp, AlertName, AlertSeverity, Description
 | sort by Timestamp desc
+```
